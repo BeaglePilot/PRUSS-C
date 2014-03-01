@@ -22,7 +22,7 @@ You can find an example blinkled PRU code @ PRUSS-C/am335x_pru_package/pru_sw/ex
 This generates 2 files: data.bin (containing the data sections) and text.bin (containing the .text sections).
 ######for arm systems
     export PRU_C_DIR="/home/root/ARMLinuxA8/include;/home/root/ARMLinuxA8/lib"
-    export PATH="/home/root/ARMLinuxA8/bin;/home/root/ARMLinuxA8/;/home/root/ARMLinuxA8/example":$PATH
+    export PATH="/home/root/ARMLinuxA8/bin:/home/root/ARMLinuxA8/:/home/root/ARMLinuxA8/example":$PATH
     clpru --silicon_version=3 -o1 blinkled_pru.c -z AM3359_PRU.cmd -o PRU_tests.out -m PRU_tests.map
     hexpru bin.cmd PRU_tests.out
 This generates 2 files: data.bin (containing the data sections) and text.bin (containing the .text sections).
