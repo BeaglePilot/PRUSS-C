@@ -7,12 +7,12 @@ BINDIR?=../bin
 CFLAGS+= -Wall -I$(INCDIR_APP_LOADER) -D__DEBUG -O2 -mtune=cortex-a8 -march=armv7-a
 LDFLAGS+=-L$(LIBDIR_APP_LOADER) -lprussdrv
 OBJDIR=obj
-TARGET=$(BINDIR)/PRU_memAccess_DDR_PRUsharedRAM
+TARGET=$(BINDIR)/blinkled
 
 _DEPS =
 DEPS = $(patsubst %,$(INCDIR_APP_LOADER)/%,$(_DEPS))
 
-_OBJ = PRU_memAccess_DDR_PRUsharedRAM.o
+_OBJ = blinkled.o
 OBJ = $(patsubst %,$(OBJDIR)/%,$(_OBJ))
 
 

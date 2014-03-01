@@ -3,7 +3,7 @@ APP_DIRS :=
 APP_DIRS += PRU_memAccess_DDR_PRUsharedRAM
 APP_DIRS += PRU_memAccessPRUDataRam
 APP_DIRS += PRU_PRUtoPRU_Interrupt
-
+APP_DIRS += blinkled
 
 ASSEM_FILES :=
 
@@ -19,4 +19,6 @@ BIN_FILES += PRU_memAccess_DDR_PRUsharedRAM.bin
 BIN_FILES += PRU_memAccessPRUDataRam.bin
 BIN_FILES += PRU_PRU0toPRU1_Interrupt.bin
 BIN_FILES += PRU_PRU1toPRU0_Interrupt.bin
+BIN_FILES += blinkled.bin
+
 
