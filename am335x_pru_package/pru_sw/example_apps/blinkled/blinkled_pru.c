@@ -6,6 +6,7 @@
 
 void main()
 {
+	int i;
 	(*(volatile unsigned long *)(0x4804c194)) = 7<<22 ;
 	for(i=0;i<0x00a00000;i++);
 	(*(volatile unsigned long *)(0x4804c190)) = 7<<22;
