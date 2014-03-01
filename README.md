@@ -10,6 +10,7 @@ PRUSS C compiler test
     scp libprussdrv.so root@beaglebone.local:/usr/local/lib
     
 ###Basic Command for Compilation
+You can find an example blinkled PRU code @ PRUSS-C/am335x_pru_package/pru_sw/example_apps/blinkled/blinkled_pru.c
 ####for 64-bit systems only:    
     sudo apt-get install ia32-libs-multiarch
 ####else for 32-bit systems start from here 
