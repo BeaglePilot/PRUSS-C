@@ -6,6 +6,12 @@
 
 void main()
 {
+	/*Initialising Procedure*/
+	asm(" LBCO &r0, C4, 4, 4");
+    	asm(" CLR r0, r0, 4");         // Clear SYSCFG[STANDBY_INIT] to enable OCP master port
+    	asm(" SBCO &r0, C4, 4, 4");
+	
+	/*Start Main Code*/
 	int i;
 	(*(volatile unsigned long *)(0x4804c194)) = 7<<22 ;
 	for(i=0;i<0x00a00000;i++);
