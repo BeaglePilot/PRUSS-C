@@ -6,7 +6,7 @@
 
 void main()
 {
-	/*Initialising Procedure*/
+	/*Intialise OCP Master port for accessing external memories*/
 	asm(" LBCO &r0, C4, 4, 4");
     	asm(" CLR r0, r0, 4");         // Clear SYSCFG[STANDBY_INIT] to enable OCP master port
     	asm(" SBCO &r0, C4, 4, 4");
