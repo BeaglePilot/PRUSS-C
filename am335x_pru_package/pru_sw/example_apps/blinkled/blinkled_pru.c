@@ -17,6 +17,6 @@ void main()
 	for(i=0;i<0x00a00000;i++);
 	
 	/*Exiting procedure*/
-	asm(" LDI R3.b0, 35");			// Send notification to Host for program completion
+	asm(" LDI R31.b0, 35");			// Send notification to Host for program completion
 	asm(" HALT");
 }
