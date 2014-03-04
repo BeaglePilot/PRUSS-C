@@ -1,6 +1,6 @@
 CC = clpru
 DEVICE=am335x
-CFLAGS = --silicon_version=3 -o1 -Dam335x 
+CFLAGS = --silicon_version=3 -o1 -D$(DEVICE)
 HEXBIN = hexpru
 PRU_COMP_PATH = ${PRU_BASE_PATH}/ARMLinuxA8
 
