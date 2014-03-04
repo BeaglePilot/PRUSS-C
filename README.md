@@ -27,6 +27,19 @@ This generates 2 files: data.bin (containing the data sections) and text.bin (co
     hexpru bin.cmd PRU_tests.out
 This generates 2 files: data.bin (containing the data sections) and text.bin (containing the .text sections).
 
+###Compiling PRU source code with StarterWare driver library
+
+Examples included inside the PRUSS_LIB :- blinkled
+
+    cd PRUSS_C/PRUSS_LIB/
+    export PRUSS_BASE_DIR=path/to/PRUSS_LIB
+    export PATH="/path/to/ARMLinuxA8/bin:/path/to/ARMLinuxA8/":$PATH
+    cp path/to/ARMLinuxA8 path/to/PRUSS_LIB
+    cd example
+    make
+
+This generates 2 files: build/data.bin (containing the data sections) and build/text.bin (containing the .text sections).
+
 ###Compiling your BBB main app
 #####Example blinkled:
     cd PRUSS-C/am335x_pru_package/pru_sw/example_apps/
