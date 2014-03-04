@@ -5,7 +5,12 @@ LIBDIR_APP_LOADER?=../../app_loader/lib
 INCDIR_APP_LOADER?=../../app_loader/include
 BINDIR_APPLICATIONS?=../bin
 BINDIR_FW?=bin
-PASM?=../utils/pasm_2
+
+ifeq ($(CROSS_COMPILE),"arm-angstrom-linux-gnueabi-")
+ PASM?=../utils/pasm_2
+else
+ PASM?=../utils/pasm
+endif
 
 all:
 # Make PRU example applications
