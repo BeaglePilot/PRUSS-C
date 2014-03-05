@@ -32,7 +32,7 @@ This generates 2 files: `data.bin` (containing the data sections) and `text.bin`
 Examples included inside the PRUSS_LIB :- blinkled
 
     cd PRUSS_C/PRUSS_LIB/
-    export PRUSS_BASE_DIR=path/to/PRUSS_LIB
+    export PRUSS_BASE_PATH==path/to/PRUSS_LIB
     export PATH="/path/to/ARMLinuxA8/bin:/path/to/ARMLinuxA8/":$PATH
     cp path/to/ARMLinuxA8 path/to/PRUSS_LIB
     cd example
