@@ -1,7 +1,7 @@
 PRUSS-C
 =======
 
-PRUSS C library
+C Library for the BeagleBone (Black) Programmable Realtime Unit SubSystem
 ###Compiling App Loader
     git clone https://github.com/BeaglePilot/PRUSS-C.git
     cd PRUSS-C/am335x_pru_package/ pru_sw/app_loader/interface
