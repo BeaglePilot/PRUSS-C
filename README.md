@@ -1,7 +1,7 @@
 PRUSS-C
 =======
 
-PRUSS C compiler test
+PRUSS C library
 ###Compiling App Loader
     git clone https://github.com/BeaglePilot/PRUSS-C.git
     cd PRUSS-C/am335x_pru_package/ pru_sw/app_loader/interface
